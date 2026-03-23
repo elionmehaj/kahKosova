@@ -28,6 +28,8 @@ export function Navbar() {
     { name: t.home, path: "/" },
     { name: t.services, path: "/services" },
     { name: t.land, path: "/land-leasing" },
+    { name: t.gjurmet, path: "/gjurmet" },
+    { name: t.bizneset, path: "/bizneset" },
     { name: t.news, path: "/news" },
     { name: t.about, path: "/about" },
   ];

@@ -23,6 +23,8 @@ import Shendeti from "@/pages/shendeti";
 import Ndertimi from "@/pages/ndertimi";
 import Investime from "@/pages/investime";
 import Transporti from "@/pages/transporti";
+import Gjurmet from "@/pages/gjurmet";
+import Bizneset from "@/pages/bizneset";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +47,8 @@ function Router() {
       <Route path="/ndertimi" component={Ndertimi} />
       <Route path="/investime" component={Investime} />
       <Route path="/transporti" component={Transporti} />
+      <Route path="/gjurmet" component={Gjurmet} />
+      <Route path="/bizneset" component={Bizneset} />
       <Route component={NotFound} />
     </Switch>
   );
