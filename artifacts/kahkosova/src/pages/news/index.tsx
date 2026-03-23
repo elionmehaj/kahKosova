@@ -1,44 +1,43 @@
 import { MainLayout } from "@/components/layout/MainLayout";
-import { Link } from "wouter";
-import { ArrowRight, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 export default function News() {
   const featured = {
-    title: "New Digital Services Law Passes in Assembly, Benefiting Diaspora",
-    excerpt: "The latest assembly session has ratified the long-awaited digital identity framework, allowing citizens abroad to request documents remotely without returning to local municipalities.",
-    date: "Oct 12, 2024",
+    title: "Ligji i Ri për Shërbimet Digjitale Kalohet në Kuvend, Përfiton Diaspora",
+    excerpt: "Në seancën e fundit të kuvendit është ratifikuar korniza e shumëpritur e identitetit digjital, duke u lejuar qytetarëve jashtë vendit të kërkojnë dokumente në distancë pa u kthyer në komunat lokale.",
+    date: "12 Tet, 2024",
     image: "https://images.unsplash.com/photo-1541872703874-fa7252ce25f5?w=1200&q=80",
-    category: "Policy"
+    category: "Politika"
   };
 
   const articles = [
     {
       id: 1,
-      title: "Direct Flights from USA to Prishtina Announced for Summer",
-      date: "Oct 10, 2024",
+      title: "Lajmërohen Fluturimet Direkte nga SHBA për në Prishtinë për Verë",
+      date: "10 Tet, 2024",
       image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
-      category: "Travel"
+      category: "Udhëtim"
     },
     {
       id: 2,
-      title: "Cultural Festival Connects 2nd Generation Diaspora in Berlin",
-      date: "Oct 08, 2024",
+      title: "Festivali Kulturor Lidh Diasporën e Gjeneratës së 2-të në Berlin",
+      date: "08 Tet, 2024",
       image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
-      category: "Culture"
+      category: "Kulturë"
     },
     {
       id: 3,
-      title: "Property Tax Updates: What Landowners Need to Know",
-      date: "Oct 05, 2024",
+      title: "Përditësimet e Tatimit në Pronë: Çfarë duhet të dinë Pronarët e Tokave",
+      date: "05 Tet, 2024",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
-      category: "Real Estate"
+      category: "Pasuri e Paluajtshme"
     }
   ];
 
   return (
     <MainLayout>
       <div className="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-12">Diaspora News</h1>
+        <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-12">Lajme nga Diaspora</h1>
 
         {/* Featured Article */}
         <div className="relative rounded-3xl overflow-hidden mb-16 group cursor-pointer border border-white/10">

@@ -52,15 +52,15 @@ export default function SignUp() {
           className="w-full max-w-md"
         >
           <Link href="/" className="inline-flex items-center text-white/60 hover:text-white mb-8 transition-colors text-sm font-medium">
-            <ArrowLeft className="w-4 h-4 mr-2" /> Back to home
+            <ArrowLeft className="w-4 h-4 mr-2" /> Kthehu në ballinë
           </Link>
 
           <div className="glass-panel p-8 sm:p-10 rounded-3xl relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-blue-400 to-purple-500" />
             
             <div className="text-center mb-8">
-              <h1 className="text-2xl font-display font-bold text-white">Create Account</h1>
-              <p className="text-white/60 text-sm mt-2">Join KahKosova to manage your services</p>
+              <h1 className="text-2xl font-display font-bold text-white">Krijo Llogari</h1>
+              <p className="text-white/60 text-sm mt-2">Bashkohuni me KahKosova për të menaxhuar shërbimet tuaja</p>
             </div>
 
             <Form {...form}>
@@ -70,7 +70,7 @@ export default function SignUp() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <Label className="text-white/80">Full Name</Label>
+                      <Label className="text-white/80">Emri i Plotë</Label>
                       <FormControl>
                         <div className="relative">
                           <User className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
@@ -91,12 +91,12 @@ export default function SignUp() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <Label className="text-white/80">Email address</Label>
+                      <Label className="text-white/80">Emaili</Label>
                       <FormControl>
                         <div className="relative">
                           <Mail className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
                           <Input 
-                            placeholder="you@example.com" 
+                            placeholder="ju@shembull.com" 
                             className="pl-10 bg-white/5 border-white/10 text-white placeholder:text-white/30 h-12 rounded-xl focus:border-primary focus:ring-primary/20" 
                             {...field} 
                           />
@@ -112,7 +112,7 @@ export default function SignUp() {
                   name="password"
                   render={({ field }) => (
                     <FormItem>
-                      <Label className="text-white/80">Password</Label>
+                      <Label className="text-white/80">Fjalëkalimi</Label>
                       <FormControl>
                         <div className="relative">
                           <Lock className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
@@ -134,14 +134,14 @@ export default function SignUp() {
                   disabled={isLoading}
                   className="w-full h-12 text-base rounded-xl bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 mt-4"
                 >
-                  {isLoading ? "Creating account..." : "Create Account"}
+                  {isLoading ? "Po krijohet llogaria..." : "Regjistrohu"}
                 </Button>
               </form>
             </Form>
 
             <p className="text-center text-sm text-white/60 mt-8">
-              Already have an account?{" "}
-              <Link href="/sign-in" className="text-primary hover:underline font-medium">Sign in</Link>
+              Keni llogari?{" "}
+              <Link href="/sign-in" className="text-primary hover:underline font-medium">Kyçuni</Link>
             </p>
           </div>
         </motion.div>

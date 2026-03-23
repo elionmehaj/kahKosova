@@ -1,40 +1,72 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Link } from "wouter";
-import { MapPin, Gift, FileText, ClipboardCheck, ArrowRight } from "lucide-react";
+import { MapPin, Gift, FileText, ClipboardCheck, ArrowRight, Heart, Hammer, TrendingUp, Car } from "lucide-react";
 
 export default function Services() {
   const services = [
     {
-      title: "Land Leasing (Toka)",
-      description: "Securely lease your properties back home. Browse available land or list your own for farming or business.",
+      title: "Toka",
+      description: "Jepni me qira pronat tuaja në vendlindje në mënyrë të sigurt. Shfletoni tokën e disponueshme ose listoni tuajën për bujqësi ose biznes.",
       icon: MapPin,
       color: "text-primary",
       bg: "bg-primary/10",
       href: "/land-leasing"
     },
     {
-      title: "Gift Gateway",
-      description: "Support your family in Kosovo by sending essential goods, groceries, and gifts through our trusted vendor network.",
+      title: "Dhurata & Dërgesa",
+      description: "Mbështesni familjen tuaj në Kosovë duke dërguar mallra thelbësore, ushqime dhe dhurata përmes rrjetit tonë të besuar të shitësve.",
       icon: Gift,
       color: "text-purple-400",
       bg: "bg-purple-500/10",
       href: "/services/gift-gateway"
     },
     {
-      title: "Bilingual Form Builder",
-      description: "Easily generate bilingual legal and administrative forms needed for Kosovo municipalities.",
+      title: "Letrat / Administrata",
+      description: "Gjeneroni lehtësisht formularë ligjorë dhe administrativë dygjuhësh të nevojshëm për komunat e Kosovës.",
       icon: FileText,
       color: "text-emerald-400",
       bg: "bg-emerald-500/10",
       href: "/services/form-builder"
     },
     {
-      title: "Return to Kosovo Checklist",
-      description: "A comprehensive, step-by-step guide for diaspora members planning to return to Kosovo.",
+      title: "Kthimi në Kosovë",
+      description: "Një udhëzues gjithëpërfshirës, hap pas hapi për anëtarët e diasporës që planifikojnë të kthehen në Kosovë.",
       icon: ClipboardCheck,
       color: "text-orange-400",
       bg: "bg-orange-500/10",
       href: "/services/checklist"
+    },
+    {
+      title: "Shëndeti",
+      description: "Rezervoni kontrollime mjekësore ose boni farmaci për të afërmit tuaj në Kosovë.",
+      icon: Heart,
+      color: "text-red-400",
+      bg: "bg-red-500/10",
+      href: "/shendeti"
+    },
+    {
+      title: "Ndërtimi",
+      description: "Gjeni kontraktorë të besueshëm për ndërtime dhe renovime të shtëpisë tuaj në Kosovë.",
+      icon: Hammer,
+      color: "text-blue-400",
+      bg: "bg-blue-500/10",
+      href: "/ndertimi"
+    },
+    {
+      title: "Investime",
+      description: "Mbështesni bizneset lokale dhe investoni në projekte me potencial në Kosovë.",
+      icon: TrendingUp,
+      color: "text-green-400",
+      bg: "bg-green-500/10",
+      href: "/investime"
+    },
+    {
+      title: "Transporti",
+      description: "Rezervoni vetura me qira paraprakisht për udhëtimin tuaj në vendlindje.",
+      icon: Car,
+      color: "text-yellow-400",
+      bg: "bg-yellow-500/10",
+      href: "/transporti"
     }
   ];
 
@@ -42,9 +74,9 @@ export default function Services() {
     <MainLayout>
       <div className="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Shërbimet Tona</h1>
           <p className="text-lg text-white/60">
-            Dedicated tools to bridge the gap between the diaspora and Kosovo. Everything you need in one secure platform.
+            Mjete të dedikuara për të mbushur hendekun midis diasporës dhe Kosovës. Gjithçka që ju nevojitet në një platformë të sigurt.
           </p>
         </div>
 
@@ -58,7 +90,7 @@ export default function Services() {
                 <h3 className="text-2xl font-bold text-white mb-4">{s.title}</h3>
                 <p className="text-white/60 mb-8 flex-1 leading-relaxed">{s.description}</p>
                 <div className={`flex items-center font-medium ${s.color} mt-auto`}>
-                  Access Service <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
+                  Hap Shërbimin <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
                 </div>
               </div>
             </Link>

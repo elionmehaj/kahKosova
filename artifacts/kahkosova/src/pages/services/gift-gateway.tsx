@@ -9,42 +9,42 @@ export default function GiftGateway() {
   const gifts = [
     {
       id: 1,
-      title: "Essential Groceries",
+      title: "Gjëra Ushqimore Thelbësore",
       vendor: "Viva Fresh Store",
       price: "€25.00",
       image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
-      desc: "Basic food essentials including flour, oil, sugar, and pasta."
+      desc: "Ushqime thelbësore përfshirë miell, vaj, sheqer dhe makarona."
     },
     {
       id: 2,
-      title: "Family Food Basket",
+      title: "Shporta Ushqimore për Familje",
       vendor: "Meridian Express",
       price: "€45.00",
       image: "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?w=800&q=80",
-      desc: "A comprehensive monthly supply basket for a family of four."
+      desc: "Një shportë e plotë mujore për një familje prej katër anëtarësh."
     },
     {
       id: 3,
-      title: "Celebration Cake",
+      title: "Tortë Festimi",
       vendor: "Embëltorja Local",
       price: "€15.00",
       image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80",
-      desc: "Freshly baked cake for birthdays or anniversaries."
+      desc: "Tortë e freskët për ditëlindje ose përvjetorë."
     },
     {
       id: 4,
-      title: "Fresh Flowers",
+      title: "Lule të Freskëta",
       vendor: "Lule Prishtina",
       price: "€20.00",
       image: "https://images.unsplash.com/photo-1563241527-3004b7be023b?w=800&q=80",
-      desc: "A beautiful seasonal bouquet delivered directly to their door."
+      desc: "Një buqetë e bukur sezonale e dorëzuar drejtpërdrejt në derën e tyre."
     }
   ];
 
   const handleSend = (title: string) => {
     toast({
-      title: "Added to Cart",
-      description: `${title} is ready to be sent to Kosovo.`,
+      title: "U shtua në Shportë",
+      description: `${title} është gati për t'u dërguar në Kosovë.`,
     });
   };
 
@@ -56,13 +56,13 @@ export default function GiftGateway() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm mb-6">
               <Gift className="w-4 h-4" /> Familja
             </div>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Gift Gateway</h1>
+            <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">Dhurata & Dërgesa</h1>
             <p className="text-lg text-white/60">
-              Support your family back home directly. Purchase goods from trusted local Kosovo vendors and have them delivered or prepared for pickup.
+              Mbështesni familjen tuaj drejtpërdrejt. Blini mallra nga shitësit e besuar vendorë në Kosovë dhe dërgojini ato në adresë ose përgatitini për marrje.
             </p>
           </div>
           <Button size="lg" className="bg-white/10 hover:bg-white/20 text-white rounded-xl backdrop-blur-sm border border-white/10 shadow-lg">
-            <ShoppingCart className="w-5 h-5 mr-2" /> View Cart
+            <ShoppingCart className="w-5 h-5 mr-2" /> Shporta
           </Button>
         </div>
 
@@ -91,7 +91,7 @@ export default function GiftGateway() {
                   onClick={() => handleSend(gift.title)}
                   className="w-full bg-primary hover:bg-primary/90 text-white rounded-xl shadow-lg shadow-primary/20"
                 >
-                  Send to Kosovo
+                  Dërgo në Kosovë
                 </Button>
               </div>
             </div>

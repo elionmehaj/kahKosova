@@ -1,40 +1,40 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Button } from "@/components/ui/button";
-import { MapPin, Filter, Search, ArrowRight } from "lucide-react";
+import { MapPin, Filter, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
 export default function LandLeasing() {
   const properties = [
     {
       id: 1,
-      title: "Fertile Farming Land",
-      location: "Ferizaj Municipality",
+      title: "Tokë Pjellore Bujqësore",
+      location: "Komuna e Ferizajt",
       hectares: 2.5,
-      price: "€150/mo",
+      price: "€150/muaj",
       image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80"
     },
     {
       id: 2,
-      title: "Commercial Plot near Highway",
+      title: "Parcelë Komerciale afër Autostradës",
       location: "Fushë Kosovë",
       hectares: 1.2,
-      price: "€450/mo",
+      price: "€450/muaj",
       image: "https://images.unsplash.com/photo-1464047736614-af6ac68163f4?w=800&q=80"
     },
     {
       id: 3,
-      title: "Orchard Land with Water Access",
+      title: "Tokë për Pemëtore me Qasje në Ujë",
       location: "Gjakovë",
       hectares: 4.0,
-      price: "€200/mo",
+      price: "€200/muaj",
       image: "https://images.unsplash.com/photo-1590682680695-43b964a3ae17?w=800&q=80"
     },
     {
       id: 4,
-      title: "Rural Plot for Development",
+      title: "Parcelë Rurale për Zhvillim",
       location: "Prizren",
       hectares: 0.8,
-      price: "€100/mo",
+      price: "€100/muaj",
       image: "https://images.unsplash.com/photo-1623838634125-9c869c9b0e27?w=800&q=80"
     }
   ];
@@ -45,20 +45,20 @@ export default function LandLeasing() {
         {/* Left Side: List */}
         <div className="w-full lg:w-1/2 p-6 lg:p-10 lg:overflow-y-auto lg:h-[calc(100vh-80px)] border-r border-white/5 bg-background">
           <div className="mb-8">
-            <h1 className="text-3xl font-display font-bold text-white mb-2">Toka / Land Leasing</h1>
-            <p className="text-white/60 text-sm">Find agricultural or commercial land to lease in Kosovo.</p>
+            <h1 className="text-3xl font-display font-bold text-white mb-2">Toka</h1>
+            <p className="text-white/60 text-sm">Gjeni tokë bujqësore ose komerciale me qira në Kosovë.</p>
           </div>
 
           <div className="flex gap-3 mb-8">
             <div className="relative flex-1">
               <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
               <Input 
-                placeholder="Search by municipality..." 
+                placeholder="Kërko sipas komunës..." 
                 className="pl-9 bg-white/5 border-white/10 text-white h-11 rounded-xl focus:border-primary"
               />
             </div>
             <Button variant="outline" className="h-11 px-4 border-white/10 text-white hover:bg-white/5 rounded-xl">
-              <Filter className="w-4 h-4 mr-2" /> Filters
+              <Filter className="w-4 h-4 mr-2" /> Filtrat
             </Button>
           </div>
 
@@ -75,7 +75,7 @@ export default function LandLeasing() {
                   </div>
                   <div className="mt-auto flex items-center justify-between">
                     <div className="bg-white/5 px-2.5 py-1 rounded-md text-xs font-medium text-white/80 border border-white/10">
-                      {p.hectares} Hectares
+                      {p.hectares} Hektarë
                     </div>
                     <span className="font-display font-bold text-primary">{p.price}</span>
                   </div>
@@ -94,15 +94,15 @@ export default function LandLeasing() {
             <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center animate-pulse mb-4">
               <MapPin className="w-8 h-8 text-primary" />
             </div>
-            <p className="text-white/60 font-medium tracking-wide uppercase text-sm">Interactive Map View</p>
-            <p className="text-white/30 text-xs mt-2 max-w-xs text-center">Map interface will load here. 4 properties found in current viewport.</p>
+            <p className="text-white/60 font-medium tracking-wide uppercase text-sm">Pamja e Hartës Interaktive</p>
+            <p className="text-white/30 text-xs mt-2 max-w-xs text-center">Harta do të ngarkohet këtu. U gjetën 4 prona në fushëpamjen aktuale.</p>
           </div>
 
           {/* Fake Pins */}
-          <div className="absolute top-[30%] left-[40%] w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(59,130,246,0.5)] border-2 border-white/20" />
-          <div className="absolute top-[45%] left-[60%] w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(59,130,246,0.5)] border-2 border-white/20" />
-          <div className="absolute top-[60%] left-[35%] w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(59,130,246,0.5)] border-2 border-white/20" />
-          <div className="absolute top-[75%] left-[50%] w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(59,130,246,0.5)] border-2 border-white/20" />
+          <div className="absolute top-[30%] left-[40%] w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(357,76%,50%,0.5)] border-2 border-white/20" />
+          <div className="absolute top-[45%] left-[60%] w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(357,76%,50%,0.5)] border-2 border-white/20" />
+          <div className="absolute top-[60%] left-[35%] w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(357,76%,50%,0.5)] border-2 border-white/20" />
+          <div className="absolute top-[75%] left-[50%] w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(357,76%,50%,0.5)] border-2 border-white/20" />
         </div>
       </div>
     </MainLayout>

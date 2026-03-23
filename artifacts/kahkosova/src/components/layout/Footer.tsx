@@ -34,27 +34,27 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-white mb-6">Services</h4>
+            <h4 className="font-display font-semibold text-white mb-6">Shërbimet</h4>
             <ul className="space-y-3">
-              <li><Link href="/land-leasing" className="text-white/60 hover:text-primary transition-colors text-sm">Land Leasing (Toka)</Link></li>
-              <li><Link href="/services/gift-gateway" className="text-white/60 hover:text-primary transition-colors text-sm">Gift Gateway</Link></li>
-              <li><Link href="/services/form-builder" className="text-white/60 hover:text-primary transition-colors text-sm">Bilingual Forms</Link></li>
-              <li><Link href="/services/checklist" className="text-white/60 hover:text-primary transition-colors text-sm">Return Checklist</Link></li>
+              <li><Link href="/land-leasing" className="text-white/60 hover:text-primary transition-colors text-sm">Toka</Link></li>
+              <li><Link href="/services/gift-gateway" className="text-white/60 hover:text-primary transition-colors text-sm">Dhurata & Dërgesa</Link></li>
+              <li><Link href="/services/form-builder" className="text-white/60 hover:text-primary transition-colors text-sm">Letrat / Administrata</Link></li>
+              <li><Link href="/services/checklist" className="text-white/60 hover:text-primary transition-colors text-sm">Kthimi në Kosovë</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-white mb-6">Company</h4>
+            <h4 className="font-display font-semibold text-white mb-6">Kompania</h4>
             <ul className="space-y-3">
-              <li><Link href="/about" className="text-white/60 hover:text-primary transition-colors text-sm">About Us</Link></li>
-              <li><Link href="/news" className="text-white/60 hover:text-primary transition-colors text-sm">News & Updates</Link></li>
-              <li><Link href="/contact" className="text-white/60 hover:text-primary transition-colors text-sm">Contact</Link></li>
-              <li><a href="#" className="text-white/60 hover:text-primary transition-colors text-sm">Careers</a></li>
+              <li><Link href="/about" className="text-white/60 hover:text-primary transition-colors text-sm">Rreth Nesh</Link></li>
+              <li><Link href="/news" className="text-white/60 hover:text-primary transition-colors text-sm">Lajme & Përditësime</Link></li>
+              <li><Link href="/contact" className="text-white/60 hover:text-primary transition-colors text-sm">Kontakt</Link></li>
+              <li><a href="#" className="text-white/60 hover:text-primary transition-colors text-sm">Karriera</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-white mb-6">Contact Us</h4>
+            <h4 className="font-display font-semibold text-white mb-6">Na Kontaktoni</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-white/60">
                 <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
@@ -78,11 +78,11 @@ export function Footer() {
             © {new Date().getFullYear()} KahKosova. All rights reserved.
           </p>
           <p className="text-xs text-white/40 text-center md:text-left">
-            Disclaimer: We provide software tools, not legal representation.
+            Ne ofrojmë mjete softuerike, jo përfaqësim ligjor.
           </p>
           <div className="flex items-center gap-4 text-xs text-white/40">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-white transition-colors">Politika e Privatësisë</a>
+            <a href="#" className="hover:text-white transition-colors">Kushtet e Përdorimit</a>
           </div>
         </div>
       </div>

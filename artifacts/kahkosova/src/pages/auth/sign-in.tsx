@@ -52,7 +52,7 @@ export default function SignIn() {
           className="w-full max-w-md"
         >
           <Link href="/" className="inline-flex items-center text-white/60 hover:text-white mb-8 transition-colors text-sm font-medium">
-            <ArrowLeft className="w-4 h-4 mr-2" /> Back to home
+            <ArrowLeft className="w-4 h-4 mr-2" /> Kthehu në ballinë
           </Link>
 
           <div className="glass-panel p-8 sm:p-10 rounded-3xl relative overflow-hidden">
@@ -63,8 +63,8 @@ export default function SignIn() {
               <div className="w-12 h-12 rounded-full bg-primary mx-auto flex items-center justify-center shadow-lg shadow-primary/30 mb-4">
                 <span className="font-display font-bold text-2xl text-white">K</span>
               </div>
-              <h1 className="text-2xl font-display font-bold text-white">Welcome Back</h1>
-              <p className="text-white/60 text-sm mt-2">Sign in to manage your KahKosova account</p>
+              <h1 className="text-2xl font-display font-bold text-white">Mirë se vini!</h1>
+              <p className="text-white/60 text-sm mt-2">Kyçuni për të menaxhuar llogarinë tuaj</p>
             </div>
 
             <Form {...form}>
@@ -74,12 +74,12 @@ export default function SignIn() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <Label className="text-white/80">Email address</Label>
+                      <Label className="text-white/80">Emaili</Label>
                       <FormControl>
                         <div className="relative">
                           <Mail className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-white/40" />
                           <Input 
-                            placeholder="you@example.com" 
+                            placeholder="ju@shembull.com" 
                             className="pl-10 bg-white/5 border-white/10 text-white placeholder:text-white/30 h-12 rounded-xl focus:border-primary focus:ring-primary/20" 
                             {...field} 
                           />
@@ -96,8 +96,8 @@ export default function SignIn() {
                   render={({ field }) => (
                     <FormItem>
                       <div className="flex items-center justify-between">
-                        <Label className="text-white/80">Password</Label>
-                        <a href="#" className="text-xs text-primary hover:underline">Forgot password?</a>
+                        <Label className="text-white/80">Fjalëkalimi</Label>
+                        <a href="#" className="text-xs text-primary hover:underline">Harruat fjalëkalimin?</a>
                       </div>
                       <FormControl>
                         <div className="relative">
@@ -120,14 +120,14 @@ export default function SignIn() {
                   disabled={isLoading}
                   className="w-full h-12 text-base rounded-xl bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 mt-2"
                 >
-                  {isLoading ? "Signing in..." : "Sign In"}
+                  {isLoading ? "Duke u kyçur..." : "Kyçu"}
                 </Button>
               </form>
             </Form>
 
             <div className="mt-8 flex items-center gap-3">
               <div className="flex-1 h-px bg-white/10" />
-              <span className="text-xs text-white/40 uppercase tracking-wider">Or continue with</span>
+              <span className="text-xs text-white/40 uppercase tracking-wider">OSE VAZHDO ME</span>
               <div className="flex-1 h-px bg-white/10" />
             </div>
 
@@ -141,8 +141,8 @@ export default function SignIn() {
             </div>
 
             <p className="text-center text-sm text-white/60 mt-8">
-              Don't have an account?{" "}
-              <Link href="/sign-up" className="text-primary hover:underline font-medium">Sign up</Link>
+              Nuk keni llogari?{" "}
+              <Link href="/sign-up" className="text-primary hover:underline font-medium">Regjistrohuni</Link>
             </p>
           </div>
         </motion.div>

@@ -20,8 +20,8 @@ export default function Dashboard() {
   return (
     <DashboardLayout>
       <div className="mb-10">
-        <h1 className="text-3xl font-display font-bold text-white">Welcome back, {user.name}!</h1>
-        <p className="text-white/60 mt-2">Here's what's happening with your KahKosova services.</p>
+        <h1 className="text-3xl font-display font-bold text-white">Mirë se vini, {user.name}!</h1>
+        <p className="text-white/60 mt-2">Këtu është ajo që po ndodh me shërbimet tuaja në KahKosova.</p>
       </div>
 
       {/* Quick Actions Grid */}
@@ -31,10 +31,10 @@ export default function Dashboard() {
             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <MapPin className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="font-semibold text-white mb-2">My Lands</h3>
-            <p className="text-sm text-white/50 mb-4">View or list your properties in Kosovo.</p>
+            <h3 className="font-semibold text-white mb-2">Toka Ime</h3>
+            <p className="text-sm text-white/50 mb-4">Shikoni ose listoni pronat tuaja në Kosovë.</p>
             <span className="text-primary text-sm font-medium flex items-center">
-              View Lands <ArrowRight className="w-4 h-4 ml-1" />
+              Shiko Tokat <ArrowRight className="w-4 h-4 ml-1" />
             </span>
           </div>
         </Link>
@@ -44,10 +44,10 @@ export default function Dashboard() {
             <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Gift className="w-6 h-6 text-purple-400" />
             </div>
-            <h3 className="font-semibold text-white mb-2">Send a Gift</h3>
-            <p className="text-sm text-white/50 mb-4">Send groceries or gifts to family.</p>
+            <h3 className="font-semibold text-white mb-2">Dërgo një Dhuratë</h3>
+            <p className="text-sm text-white/50 mb-4">Dërgoni ushqime ose dhurata te familja.</p>
             <span className="text-purple-400 text-sm font-medium flex items-center">
-              Browse Gifts <ArrowRight className="w-4 h-4 ml-1" />
+              Shfleto Dhuratat <ArrowRight className="w-4 h-4 ml-1" />
             </span>
           </div>
         </Link>
@@ -57,10 +57,10 @@ export default function Dashboard() {
             <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <FileText className="w-6 h-6 text-emerald-400" />
             </div>
-            <h3 className="font-semibold text-white mb-2">Documents</h3>
-            <p className="text-sm text-white/50 mb-4">Generate bilingual forms instantly.</p>
+            <h3 className="font-semibold text-white mb-2">Dokumente</h3>
+            <p className="text-sm text-white/50 mb-4">Gjeneroni formularë dygjuhësh menjëherë.</p>
             <span className="text-emerald-400 text-sm font-medium flex items-center">
-              Create Form <ArrowRight className="w-4 h-4 ml-1" />
+              Krijo Formular <ArrowRight className="w-4 h-4 ml-1" />
             </span>
           </div>
         </Link>
@@ -68,7 +68,7 @@ export default function Dashboard() {
 
       {/* Recent Activity */}
       <div>
-        <h2 className="text-xl font-bold text-white mb-6">Recent Activity</h2>
+        <h2 className="text-xl font-bold text-white mb-6">Aktiviteti i Fundit</h2>
         <div className="bg-card border border-white/5 rounded-2xl p-6">
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -76,9 +76,9 @@ export default function Dashboard() {
                 <Clock className="w-5 h-5 text-white/40" />
               </div>
               <div>
-                <p className="text-white font-medium">Account created</p>
-                <p className="text-sm text-white/50 mt-1">You just joined KahKosova. Welcome aboard!</p>
-                <p className="text-xs text-white/30 mt-2">Just now</p>
+                <p className="text-white font-medium">Llogaria u krijua</p>
+                <p className="text-sm text-white/50 mt-1">Sapo u bashkuat me KahKosova. Mirë se vini!</p>
+                <p className="text-xs text-white/30 mt-2">Tani</p>
               </div>
             </div>
             <div className="flex items-start gap-4 opacity-50 grayscale">
@@ -86,9 +86,9 @@ export default function Dashboard() {
                 <Gift className="w-5 h-5 text-purple-400" />
               </div>
               <div>
-                <p className="text-white font-medium">Sent Family Grocery Basket</p>
-                <p className="text-sm text-white/50 mt-1">To: Prishtina, Kosovo</p>
-                <p className="text-xs text-white/30 mt-2">No past history (Demo)</p>
+                <p className="text-white font-medium">Dërgoni Shportë Ushqimesh për Familje</p>
+                <p className="text-sm text-white/50 mt-1">Për: Prishtinë, Kosovë</p>
+                <p className="text-xs text-white/30 mt-2">Nuk ka histori (Demo)</p>
               </div>
             </div>
           </div>

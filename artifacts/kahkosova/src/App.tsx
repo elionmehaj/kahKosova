@@ -18,6 +18,10 @@ import LandLeasing from "@/pages/land-leasing/index";
 import News from "@/pages/news/index";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
+import Shendeti from "@/pages/shendeti";
+import Ndertimi from "@/pages/ndertimi";
+import Investime from "@/pages/investime";
+import Transporti from "@/pages/transporti";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +40,10 @@ function Router() {
       <Route path="/news" component={News} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/shendeti" component={Shendeti} />
+      <Route path="/ndertimi" component={Ndertimi} />
+      <Route path="/investime" component={Investime} />
+      <Route path="/transporti" component={Transporti} />
       <Route component={NotFound} />
     </Switch>
   );

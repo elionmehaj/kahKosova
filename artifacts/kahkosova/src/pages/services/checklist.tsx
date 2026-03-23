@@ -5,20 +5,20 @@ import { ClipboardCheck, CheckCircle2, ChevronRight } from "lucide-react";
 export default function ReturnChecklist() {
   const steps = [
     {
-      title: "Tax & Customs Compliance",
-      desc: "Understand what belongings you can bring tax-free as a returning diaspora member."
+      title: "Pajtueshmëria me Tatimet dhe Doganat",
+      desc: "Kuptoni se cilat gjëra mund të sillni pa taksa si një anëtar i diasporës që kthehet."
     },
     {
-      title: "Property & Residency Registration",
-      desc: "Steps to register your permanent address and update your ID card in your municipality."
+      title: "Regjistrimi i Pronës dhe Vendbanimit",
+      desc: "Hapat për të regjistruar adresën tuaj të përhershme dhe për të përditësuar letërnjoftimin në komunën tuaj."
     },
     {
-      title: "Business Permits",
-      desc: "If you're opening a business, learn about ARBK registration and municipal permits."
+      title: "Lejet e Biznesit",
+      desc: "Nëse po hapni një biznes, mësoni rreth regjistrimit në ARBK dhe lejeve komunale."
     },
     {
-      title: "Healthcare & Education",
-      desc: "Enrolling children in local schools and registering for the public health system."
+      title: "Shëndetësia dhe Arsimi",
+      desc: "Regjistrimi i fëmijëve në shkollat lokale dhe regjistrimi në sistemin e shëndetësisë publike."
     }
   ];
 
@@ -27,14 +27,14 @@ export default function ReturnChecklist() {
       <div className="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm mb-6">
-            <ClipboardCheck className="w-4 h-4" /> Repatriation
+            <ClipboardCheck className="w-4 h-4" /> Riatdhesimi
           </div>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Return to Kosovo</h1>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Kthimi në Kosovë</h1>
           <p className="text-lg text-white/60 mb-8">
-            Planning to move back? We've compiled the official requirements and administrative steps into one simple checklist tailored to your situation.
+            Planifikoni të ktheheni? Kemi përpiluar kërkesat zyrtare dhe hapat administrativë në një listë të thjeshtë të përshtatur për situatën tuaj.
           </p>
           <Button size="lg" className="h-14 px-8 rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 text-base">
-            Start Personalized Questionnaire <ChevronRight className="w-5 h-5 ml-2" />
+            Fillo Pyetësorin e Personalizuar <ChevronRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
 

@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { Link, useLocation } from "wouter";
 import { useAuth } from "@/context/AuthContext";
 import { Button } from "@/components/ui/button";
-import { LayoutDashboard, MapPin, Gift, FileText, Settings, LogOut, Home, Menu } from "lucide-react";
+import { LayoutDashboard, MapPin, Gift, FileText, Settings, LogOut, Home, Menu, Heart, Hammer, TrendingUp, Car } from "lucide-react";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -15,10 +15,14 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
   if (!user) return null;
 
   const navItems = [
-    { icon: LayoutDashboard, label: "Overview", href: "/dashboard" },
-    { icon: MapPin, label: "My Lands", href: "/land-leasing" },
-    { icon: Gift, label: "Gifting", href: "/services/gift-gateway" },
-    { icon: FileText, label: "Documents", href: "/services/form-builder" },
+    { icon: LayoutDashboard, label: "Pulti", href: "/dashboard" },
+    { icon: MapPin, label: "Toka", href: "/land-leasing" },
+    { icon: Gift, label: "Dhurata & Dërgesa", href: "/services/gift-gateway" },
+    { icon: FileText, label: "Letrat", href: "/services/form-builder" },
+    { icon: Heart, label: "Shëndeti", href: "/shendeti" },
+    { icon: Hammer, label: "Ndërtimi", href: "/ndertimi" },
+    { icon: TrendingUp, label: "Investime", href: "/investime" },
+    { icon: Car, label: "Transporti", href: "/transporti" },
   ];
 
   const SidebarContent = () => (
@@ -60,11 +64,11 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
         </div>
         <Link href="/">
           <Button variant="ghost" className="w-full justify-start text-white/60 hover:text-white hover:bg-white/5 mb-2">
-            <Home className="w-4 h-4 mr-3" /> Back to Site
+            <Home className="w-4 h-4 mr-3" /> Kthehu në Ballinë
           </Button>
         </Link>
         <Button variant="ghost" onClick={logout} className="w-full justify-start text-red-400 hover:text-red-300 hover:bg-red-400/10">
-          <LogOut className="w-4 h-4 mr-3" /> Sign Out
+          <LogOut className="w-4 h-4 mr-3" /> Çkyçu
         </Button>
       </div>
     </div>
