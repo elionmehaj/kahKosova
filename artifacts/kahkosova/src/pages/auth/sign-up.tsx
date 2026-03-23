@@ -59,6 +59,7 @@ export default function SignUp() {
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-blue-400 to-purple-500" />
             
             <div className="text-center mb-8">
+              <img src="/logo.png" alt="KahKosova Logo" className="h-12 w-auto mx-auto mb-4 object-contain" />
               <h1 className="text-2xl font-display font-bold text-white">Krijo Llogari</h1>
               <p className="text-white/60 text-sm mt-2">Bashkohuni me KahKosova për të menaxhuar shërbimet tuaja</p>
             </div>

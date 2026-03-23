@@ -1,18 +1,17 @@
 import { Link } from "wouter";
 import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export function Footer() {
+  const { t } = useLanguage();
   return (
     <footer className="bg-card border-t border-white/5 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="font-display font-bold text-white">K</span>
-              </div>
-              <span className="font-display font-bold text-xl text-white">KahKosova</span>
+            <div className="flex items-center gap-2 mb-2">
+              <img src="/logo.png" alt="KahKosova Logo" className="h-[4.5rem] w-auto object-contain" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
               Your digital bridge to Kosovo. We provide software tools to help the diaspora manage land, handle bureaucracy, and stay connected with family.
@@ -34,9 +33,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-white mb-6">Shërbimet</h4>
+            <h4 className="font-display font-semibold text-white mb-6">{t.services}</h4>
             <ul className="space-y-3">
-              <li><Link href="/land-leasing" className="text-white/60 hover:text-primary transition-colors text-sm">Toka</Link></li>
+              <li><Link href="/land-leasing" className="text-white/60 hover:text-primary transition-colors text-sm">{t.land}</Link></li>
               <li><Link href="/services/gift-gateway" className="text-white/60 hover:text-primary transition-colors text-sm">Dhurata & Dërgesa</Link></li>
               <li><Link href="/services/form-builder" className="text-white/60 hover:text-primary transition-colors text-sm">Letrat / Administrata</Link></li>
               <li><Link href="/services/checklist" className="text-white/60 hover:text-primary transition-colors text-sm">Kthimi në Kosovë</Link></li>
@@ -44,17 +43,17 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-white mb-6">Kompania</h4>
+            <h4 className="font-display font-semibold text-white mb-6">{t.about}</h4>
             <ul className="space-y-3">
-              <li><Link href="/about" className="text-white/60 hover:text-primary transition-colors text-sm">Rreth Nesh</Link></li>
-              <li><Link href="/news" className="text-white/60 hover:text-primary transition-colors text-sm">Lajme & Përditësime</Link></li>
-              <li><Link href="/contact" className="text-white/60 hover:text-primary transition-colors text-sm">Kontakt</Link></li>
+              <li><Link href="/about" className="text-white/60 hover:text-primary transition-colors text-sm">{t.about}</Link></li>
+              <li><Link href="/news" className="text-white/60 hover:text-primary transition-colors text-sm">{t.news}</Link></li>
+              <li><Link href="/contact" className="text-white/60 hover:text-primary transition-colors text-sm">{t.contact}</Link></li>
               <li><a href="#" className="text-white/60 hover:text-primary transition-colors text-sm">Karriera</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display font-semibold text-white mb-6">Na Kontaktoni</h4>
+            <h4 className="font-display font-semibold text-white mb-6">{t.contact}</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-white/60">
                 <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />

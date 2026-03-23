@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { MainLayout } from "@/components/layout/MainLayout";
@@ -5,8 +6,26 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Gift, FileText, ArrowRight, ShieldCheck, Globe, Clock, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
+const CITIES = [
+  "prishtina",
+  "peja",
+  "prizren",
+  "gjilan",
+  "ferizaj",
+  "gjakova",
+  "mitrovica"
+];
+
 export default function Home() {
   const { t } = useLanguage();
+  const [currentCityIndex, setCurrentCityIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentCityIndex((prev) => (prev + 1) % CITIES.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -22,13 +41,20 @@ export default function Home() {
     <MainLayout>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://pixabay.com/get/g96e4ae2b7b0d201beefb3eee7934a7173a13ba2435f27ad4c654718d5eea93b77633975287c61b1cc849faa2bb22c5404a4fe9dcfd5c9167ff421baf21703e5a_1280.jpg"
-            alt="Kosovo Landscape"
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/50" />
+        <div className="absolute inset-0 z-0 bg-black">
+          {CITIES.map((city, index) => (
+            <img
+              key={city}
+              src={`/images/${city}.png`}
+              alt={`${city} Landscape`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                index === currentCityIndex ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
+          {/* Phase 3: Dark overlay for perfect text contrast */}
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         </div>
 

@@ -27,6 +27,8 @@ export function Navbar() {
   const navLinks = [
     { name: t.home, path: "/" },
     { name: t.services, path: "/services" },
+    { name: t.kufiri, path: "/kufiri" },
+    { name: t.gjuha, path: "/gjuha-jone" },
     { name: t.land, path: "/land-leasing" },
     { name: t.gjurmet, path: "/gjurmet" },
     { name: t.bizneset, path: "/bizneset" },
@@ -37,15 +39,12 @@ export function Navbar() {
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md border-b border-white/10 py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-[#0b0d17]/90 backdrop-blur-md border-b border-white/10 py-3" : "bg-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/25 group-hover:scale-105 transition-transform">
-            <span className="font-display font-bold text-xl text-white">K</span>
-          </div>
-          <span className="font-display font-bold text-xl tracking-tight hidden sm:block text-white">KahKosova</span>
+          <img src="/logo.png" alt="KahKosova Logo" className="h-[4.5rem] w-auto py-1 object-contain transition-transform group-hover:scale-105" />
         </Link>
 
         {/* Desktop Nav */}

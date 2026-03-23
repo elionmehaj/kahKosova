@@ -60,9 +60,7 @@ export default function SignIn() {
             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-blue-400 to-purple-500" />
             
             <div className="text-center mb-8">
-              <div className="w-12 h-12 rounded-full bg-primary mx-auto flex items-center justify-center shadow-lg shadow-primary/30 mb-4">
-                <span className="font-display font-bold text-2xl text-white">K</span>
-              </div>
+              <img src="/logo.png" alt="KahKosova Logo" className="h-12 w-auto mx-auto mb-4 object-contain" />
               <h1 className="text-2xl font-display font-bold text-white">Mirë se vini!</h1>
               <p className="text-white/60 text-sm mt-2">Kyçuni për të menaxhuar llogarinë tuaj</p>
             </div>

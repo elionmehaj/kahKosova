@@ -16,6 +16,8 @@ export type TranslationDict = {
   logout: string;
   gjurmet: string;
   bizneset: string;
+  kufiri: string;
+  gjuha: string;
   // Toka page
   mapTitle: string;
   searchPlaceholder: string;
@@ -148,18 +150,20 @@ export type TranslationDict = {
 
 const translations: Record<Language, TranslationDict> = {
   AL: {
-    home: "Ballina",
-    services: "Shërbimet",
-    land: "Toka",
+    home: "Vatra",
+    services: "Dora e Ndihmës",
+    land: "Guri i Shpisë",
     news: "Lajme",
-    about: "Rreth Nesh",
-    contact: "Kontakt",
+    about: "Kush Jemi Na?",
+    contact: "Mshaj Telit",
     login: "Kyçu",
     register: "Regjistrohu",
     dashboard: "Pulti",
     logout: "Çkyçu",
-    gjurmet: "Gjurmët",
+    gjurmet: "Rranjët",
     bizneset: "Bizneset",
+    kufiri: "Kufiri Live",
+    gjuha: "Gjuha Jonë",
     // Toka
     mapTitle: "Harta e Pronave",
     searchPlaceholder: "Kërko sipas komunës...",
@@ -187,9 +191,9 @@ const translations: Record<Language, TranslationDict> = {
     statSatisfaction: "Kënaqshmëri",
     featuresTitle: "Shërbimet Kryesore",
     featuresSubtitle: "Gjithçka që ju nevojitet për të ruajtur lidhjet dhe pasuritë tuaja në Kosovë.",
-    feature1Title: "Toka / Patundshmëri",
+    feature1Title: "Guri i Shpisë / Patundshmëri",
     feature1Desc: "Menaxhoni tokën dhe pronat tuaja. Gjeni mundësi për qira apo blerje.",
-    feature2Title: "Familja / Dhurata & Dërgesa",
+    feature2Title: "Për t'Miletin / Dhurata & Dërgesa",
     feature2Desc: "Dërgoni ushqime dhe dhurata te më të dashurit tuaj me lehtësi.",
     feature3Title: "Letrat / Administrata",
     feature3Desc: "Gjeneroni dokumente ligjore dhe formulare dygjuhëshe për institucionet e Kosovës.",
@@ -212,10 +216,10 @@ const translations: Record<Language, TranslationDict> = {
     signUpBtn: "Regjistrohu Falas",
     haveAccount: "Keni tashmë llogari?",
     // Services
-    servicesTitle: "Të gjitha shërbimet",
+    servicesTitle: "Dora e Ndihmës",
     servicesSubtitle: "Platforma jonë ju ofron gjithçka që keni nevojë.",
     // Gjurmet
-    gjurmetTitle: "Gjurmët — Rrënjët Familjare",
+    gjurmetTitle: "Rranjët — Historia e Familjes",
     gjurmetSubtitle: "Zbuloni historinë e familjes suaj. Gjurmoni rekorde, rrënjë dhe trashëgimi nga trojet e Kosovës.",
     gjurmetSearchTitle: "Kërko Arkivën",
     gjurmetSurnameLabel: "Mbiemri i familjes",
@@ -248,7 +252,7 @@ const translations: Record<Language, TranslationDict> = {
     biznesetVisitBtn: "Vizito faqen",
     biznesetReviews: "vlerësime",
     // Shendeti
-    shendetiTitle: "Kujdesi Shëndetësor për Familjen",
+    shendetiTitle: "Shneta për Familjen",
     shendetiSubtitle: "Rezervoni kontrollime mjekësore ose boni farmaci për të afërmit tuaj në Kosovë.",
     shendetiFilter: "Filtro",
     shendetiCity: "Qyteti",
@@ -262,7 +266,7 @@ const translations: Record<Language, TranslationDict> = {
     shendetiBookedTitle: "Rezervimi u dërgua",
     shendetiBookedDesc: "Do t'ju kontaktojmë së shpejti për konfirmim.",
     // Investime
-    investimeTitle: "Investoni në Kosovë",
+    investimeTitle: "Bereqeti (Investimet)",
     investimeSubtitle: "Mbështesni ekonominë lokale dhe përfitoni kthim të qëndrueshëm. Zbuloni projekte të verifikuara nga sipërmarrës dhe biznese kosovare.",
     investimeActiveTitle: "Projekte Aktive",
     investimeAllTitle: "Të Gjitha Projektet",
@@ -291,18 +295,20 @@ const translations: Record<Language, TranslationDict> = {
   },
 
   DE: {
-    home: "Startseite",
-    services: "Dienstleistungen",
-    land: "Immobilien",
+    home: "Heimat",
+    services: "Hilfsangebote",
+    land: "Grund & Boden",
     news: "Nachrichten",
-    about: "Über uns",
+    about: "Wer wir sind",
     contact: "Kontakt",
     login: "Anmelden",
     register: "Registrieren",
     dashboard: "Dashboard",
     logout: "Abmelden",
-    gjurmet: "Familienroots",
+    gjurmet: "Die Wurzeln",
     bizneset: "Unternehmen",
+    kufiri: "Grenzen Live",
+    gjuha: "Unsere Sprache",
     // Toka
     mapTitle: "Immobilienkarte",
     searchPlaceholder: "Nach Gemeinde suchen...",
@@ -330,9 +336,9 @@ const translations: Record<Language, TranslationDict> = {
     statSatisfaction: "Zufriedenheit",
     featuresTitle: "Hauptleistungen",
     featuresSubtitle: "Alles was Sie brauchen, um Ihre Verbindungen und Vermögenswerte in Kosovo zu verwalten.",
-    feature1Title: "Grundstücke / Immobilien",
+    feature1Title: "Grund & Boden / Immobilien",
     feature1Desc: "Verwalten Sie Ihre Grundstücke und Immobilien. Finden Sie Miet- oder Kaufmöglichkeiten.",
-    feature2Title: "Familie / Geschenke & Lieferungen",
+    feature2Title: "Für die Liebsten / Geschenke",
     feature2Desc: "Senden Sie Lebensmittel und Geschenke einfach an Ihre Liebsten.",
     feature3Title: "Dokumente / Verwaltung",
     feature3Desc: "Erstellen Sie Rechtsdokumente und zweisprachige Formulare für kosovarische Behörden.",
@@ -355,10 +361,10 @@ const translations: Record<Language, TranslationDict> = {
     signUpBtn: "Kostenlos registrieren",
     haveAccount: "Haben Sie bereits ein Konto?",
     // Services
-    servicesTitle: "Alle Dienstleistungen",
+    servicesTitle: "Hilfsangebote",
     servicesSubtitle: "Unsere Plattform bietet Ihnen alles, was Sie brauchen.",
     // Gjurmet
-    gjurmetTitle: "Familienroots — Genealogie",
+    gjurmetTitle: "Die Wurzeln — Genealogie",
     gjurmetSubtitle: "Entdecken Sie die Geschichte Ihrer Familie. Verfolgen Sie Aufzeichnungen, Wurzeln und Erbe aus den Gebieten Kosovos.",
     gjurmetSearchTitle: "Archiv durchsuchen",
     gjurmetSurnameLabel: "Familienname",
@@ -391,7 +397,7 @@ const translations: Record<Language, TranslationDict> = {
     biznesetVisitBtn: "Website besuchen",
     biznesetReviews: "Bewertungen",
     // Shendeti
-    shendetiTitle: "Gesundheitsversorgung für die Familie",
+    shendetiTitle: "Gesundheit für die Familie",
     shendetiSubtitle: "Buchen Sie medizinische Untersuchungen oder bestellen Sie Medikamente für Ihre Angehörigen in Kosovo.",
     shendetiFilter: "Filtern",
     shendetiCity: "Stadt",
@@ -405,7 +411,7 @@ const translations: Record<Language, TranslationDict> = {
     shendetiBookedTitle: "Buchung gesendet",
     shendetiBookedDesc: "Wir werden Sie in Kürze zur Bestätigung kontaktieren.",
     // Investime
-    investimeTitle: "In Kosovo investieren",
+    investimeTitle: "Wohlstand (Investitionen)",
     investimeSubtitle: "Unterstützen Sie die lokale Wirtschaft und erzielen Sie nachhaltige Renditen. Entdecken Sie verifizierte Projekte von kosovarischen Unternehmern.",
     investimeActiveTitle: "Aktive Projekte",
     investimeAllTitle: "Alle Projekte",

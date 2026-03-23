@@ -25,6 +25,8 @@ import Investime from "@/pages/investime";
 import Transporti from "@/pages/transporti";
 import Gjurmet from "@/pages/gjurmet";
 import Bizneset from "@/pages/bizneset";
+import Kufiri from "@/pages/kufiri";
+import GjuhaJone from "@/pages/gjuha-jone";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +42,8 @@ function Router() {
       <Route path="/services/checklist" component={ReturnChecklist} />
       <Route path="/services/form-builder" component={FormBuilder} />
       <Route path="/land-leasing" component={LandLeasing} />
+      <Route path="/kufiri" component={Kufiri} />
+      <Route path="/gjuha-jone" component={GjuhaJone} />
       <Route path="/news" component={News} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
